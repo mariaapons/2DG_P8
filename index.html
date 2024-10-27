@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p8_flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #caixa{
+            width: 100vw;
+            height: 57vw;
+            background: #012030;
+            display: flex;
+            justify-content: space-around;
+        }  
+        .quadrat{
+            width: 28vw;
+            height: 28vw;
+            background: #9AEBA3;
+            align-self:flex-end;
+            order: -1;
+        }
+        .cercle{
+            width: 28vw;
+            height: 28vw;
+            border-radius: 33vw;
+            background-color: #45C4B0;
+            align-self: flex-end;
+        }
+        .rect{
+            width: 28vw;
+            height: 90vh;
+            background-color: #DAFDBA;
+            align-self:flex-end;
+            order: -2;
+        }
+        a:link{
+            background: #9AEBA3;
+            align-self:flex-end;
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa">
+        <div class="rect"></div>
+        <div class="cercle"></div>
+        <a href="img/figuras.jpg">
+            <div>
+                <div class="quadrat"></div>
+            </div>
+        </a>
+        
+    </div>  
+</body>
+</html>
